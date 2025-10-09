@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" spacing="16" styleClass="dashboard">
+    <children>
+        <GridPane hgap="12" vgap="12">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="NEVER"/>
+            </rowConstraints>
+            <children>
+                <TitledPane text="Total Sales" expanded="true" collapsible="false" GridPane.columnIndex="0">
+                    <content><Label text="₹45,280" styleClass="metric"/></content>
+                </TitledPane>
+                <TitledPane text="Total Orders" expanded="true" collapsible="false" GridPane.columnIndex="1">
+                    <content><Label text="156" styleClass="metric"/></content>
+                </TitledPane>
+                <TitledPane text="Pending Orders" expanded="true" collapsible="false" GridPane.columnIndex="2">
+                    <content><Label text="12" styleClass="metric"/></content>
+                </TitledPane>
+                <TitledPane text="Active Tables" expanded="true" collapsible="false" GridPane.columnIndex="3">
+                    <content><Label text="18/25" styleClass="metric"/></content>
+                </TitledPane>
+            </children>
+        </GridPane>
+
+        <HBox spacing="16">
+            <children>
+                <LineChart VBox.vgrow="ALWAYS" prefHeight="300">
+                    <xAxis><CategoryAxis label="Day"/></xAxis>
+                    <yAxis><NumberAxis label="Sales"/></yAxis>
+                </LineChart>
+                <PieChart prefWidth="420"/>
+            </children>
+        </HBox>
+
+        <TitledPane text="Recent Orders" expanded="true" collapsible="false">
+            <content>
+                <TableView prefHeight="260">
+                    <columns>
+                        <TableColumn text="Order ID" prefWidth="120"/>
+                        <TableColumn text="Table/Type" prefWidth="200"/>
+                        <TableColumn text="Amount" prefWidth="160"/>
+                        <TableColumn text="Status" prefWidth="140"/>
+                        <TableColumn text="Time" prefWidth="140"/>
+                    </columns>
+                </TableView>
+            </content>
+        </TitledPane>
+    </children>
+    <padding><Insets top="16" left="16" right="16" bottom="16"/></padding>
+</VBox>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" spacing="8">
+    <children>
+        <HBox spacing="8">
+            <children>
+                <TextField promptText="Search items"/>
+                <Button text="Low Stock"/>
+                <Button text="Import"/>
+                <Button text="Export"/>
+            </children>
+        </HBox>
+        <TableView VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn text="Item" prefWidth="240"/>
+                <TableColumn text="SKU" prefWidth="140"/>
+                <TableColumn text="Qty" prefWidth="80"/>
+                <TableColumn text="Unit" prefWidth="100"/>
+                <TableColumn text="Reorder" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </children>
+    <padding><Insets top="12" left="12" right="12" bottom="12"/></padding>
+</VBox>

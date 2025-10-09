@@ -1,0 +1,57 @@
+:root {
+    -fx-base-100: #ffffff;
+    -fx-base-200: #f6f7fb;
+    -fx-base-300: #eceff5;
+    -fx-primary: #2563eb; /* blue-600 */
+    -fx-primary-contrast: #ffffff;
+    -fx-text-900: #0f172a;
+    -fx-text-600: #475569;
+    -fx-card: #ffffff;
+    -fx-success: #16a34a;
+    -fx-warning: #f59e0b;
+    -fx-danger: #ef4444;
+}
+
+.root {
+    -fx-font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    -fx-background-color: -fx-base-200;
+}
+
+.topbar {
+    -fx-background-color: -fx-base-100;
+    -fx-border-color: -fx-base-300;
+    -fx-border-width: 0 0 1 0;
+}
+.brand {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+}
+.sidebar {
+    -fx-background-color: -fx-base-100;
+    -fx-border-color: -fx-base-300; 
+    -fx-border-width: 0 1 0 0;
+}
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+}
+.nav-btn:hover { -fx-background-color: -fx-base-300; }
+
+.content { -fx-padding: 12; }
+
+.dashboard .titled-pane > .title {
+    -fx-background-color: -fx-card;
+}
+.metric { -fx-font-size: 24px; -fx-font-weight: 700; }
+
+.tile { 
+    -fx-background-color: -fx-card; 
+    -fx-padding: 16; 
+    -fx-border-color: -fx-base-300; 
+    -fx-border-radius: 8; 
+}
+
+.panel { -fx-background-color: -fx-card; }
+
+.h2 { -fx-font-size: 18px; -fx-font-weight: 600; }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" spacing="8">
+    <children>
+        <HBox spacing="8">
+            <children>
+                <Button text="All"/>
+                <Button text="Occupied"/>
+                <Button text="Available"/>
+            </children>
+        </HBox>
+        <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+            <content>
+                <FlowPane hgap="8" vgap="8">
+                    <children>
+                        <Button text="Table 1" minWidth="120" minHeight="80"/>
+                        <Button text="Table 2" minWidth="120" minHeight="80"/>
+                    </children>
+                </FlowPane>
+            </content>
+        </ScrollPane>
+    </children>
+    <padding><Insets top="12" left="12" right="12" bottom="12"/></padding>
+</VBox>

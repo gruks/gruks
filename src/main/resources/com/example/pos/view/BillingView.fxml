@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox spacing="8" prefWidth="360" styleClass="panel">
+            <children>
+                <TextField promptText="Search items..."/>
+                <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+                    <content>
+                        <TilePane hgap="8" vgap="8" prefColumns="2">
+                            <!-- Item tiles go here dynamically -->
+                            <Label text="Sample Item" styleClass="tile"/>
+                        </TilePane>
+                    </content>
+                </ScrollPane>
+            </children>
+            <padding><Insets top="12" left="12" right="12" bottom="12"/></padding>
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="8">
+            <children>
+                <TableView VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn text="Item" prefWidth="240"/>
+                        <TableColumn text="Qty" prefWidth="80"/>
+                        <TableColumn text="Price" prefWidth="120"/>
+                        <TableColumn text="Total" prefWidth="120"/>
+                        <TableColumn text="Actions" prefWidth="120"/>
+                    </columns>
+                </TableView>
+                <HBox spacing="8" alignment="CENTER_RIGHT">
+                    <children>
+                        <Label text="Subtotal:"/>
+                        <Label text="₹0.00" styleClass="metric"/>
+                        <Button text="Discount"/>
+                        <Button text="Charge"/>
+                        <Button text="New Bill"/>
+                        <Button text="KOT"/>
+                        <Button text="Settle"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding><Insets top="12" left="12" right="12" bottom="12"/></padding>
+        </VBox>
+    </center>
+</BorderPane>
