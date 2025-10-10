@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:controller="com.example.pos.MainController" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT" styleClass="app-header">
+            <Label text="RestaurantPOS" styleClass="app-title" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Fetch Theme" onAction="#onFetchTheme" />
+        </HBox>
+    </top>
+    <center>
+        <StackPane alignment="CENTER">
+            <VBox spacing="16" alignment="CENTER">
+                <Label text="Welcome" styleClass="h1" />
+                <Button text="Primary" styleClass="btn-primary" />
+                <Button text="Secondary" styleClass="btn-secondary" />
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>

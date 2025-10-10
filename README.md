@@ -1,49 +1,39 @@
-<h1 align="center">Hi 👋, I'm Ayush Kumar</h1>
-<h3 align="center">A passionate Fullstack developer from India</h3>
+# JavaFX POS Theme Demo
 
-- 🔭 I’m currently working on **My Research**
+This sample shows how to design an FXML view with CSS that reads colors from a backend and applies them dynamically at runtime.
 
-- 🌱 I’m currently learning **Javascript, C, Java**
+## Run
 
-- 👨‍💻 All of my projects are available at [https://github.com/gruks](https://github.com/gruks)
+You need Java 17+ and Gradle (or use the Gradle wrapper in your environment).
 
-- 💬 Ask me about **Java**
+- Start a simple theme endpoint locally:
 
-- 📫 How to reach me **notastheticallyayush@gmail.com**
+```bash
+python3 -m http.server 8080 &>/dev/null &
+# Or use any server that returns JSON at /theme
+```
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/ayushkumar61510" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ayushkumar61510" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/ayush kumar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ayush kumar" height="30" width="40" /></a>
-</p>
+Expected JSON at `http://localhost:8080/theme`:
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
-  </a> 
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
-  </a> 
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
-  </a> 
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
-  </a> 
-  <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="nextjs" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.cplusplus.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/> 
-  </a> 
-</p>
+```json
+{
+  "primary": "#2563eb",
+  "secondary": "#16a34a",
+  "background": "#0b1220",
+  "text": "#e5e7eb"
+}
+```
+
+- Run the app:
+
+```bash
+./gradlew run -Dtheme.url=http://localhost:8080/theme
+```
+
+If Gradle is not installed, install it or run with the wrapper if available.
+
+## How it works
+- Looked-up CSS colors are defined in `src/main/resources/theme.css` using variables like `-color-primary`.
+- `ThemeService` fetches colors from the backend.
+- `ThemeApplier` sets style variables on the scene root, which immediately updates all styled nodes.
+- `MainController` includes a "Fetch Theme" button to re-apply on demand.
