@@ -7,7 +7,10 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/gruks](https://github.com/gruks)
 
-- 💬 Ask me about **Java**
+- 💬 Ask me about my Life. { pretty sure, it's good }
+
+- [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/your_username)
+ LeetCode **https://leetcode.com/u/gruks/**
 
 - 📫 How to reach me **notastheticallyayush@gmail.com**
 
