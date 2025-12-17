@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **My Research**
 
-- 🌱 I’m currently learning **Javascript, C, Java**
+- 🌱 I’m currently learning **Javascript, C, Java, Python, C++**
 
 - 📽️ All of my projects are available at [https://github.com/gruks](https://github.com/gruks)
 
