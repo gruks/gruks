@@ -23,7 +23,7 @@ I work across modern frontend stacks, Java/Spring backends, and DevOps tooling w
    <a href="https://linkedin.com/in/YOUR-LINK">
       <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-Connect-B7410E?style=for-the-badge&logo=linkedin&logoColor=white"/>
    </a>
-   <a href="https://portfolio-puce-two-74.vercel.app/">
+   <a href="https://portfolio-git-dev-gruks-projects.vercel.app/">
       <img src="https://custom-icon-badges.demolab.com/badge/Portfolio-Visit-1a0f0a?style=for-the-badge&logo=vercel&logoColor=white"/>
    </a>
 </p>
