@@ -62,12 +62,13 @@ I work across modern frontend stacks, Java/Spring backends, and DevOps tooling w
 </div>
 <div align="center">
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=gruks&show_icons=true&theme=transparent&bg_color=ffffff10&title_color=B7410E&text_color=FFFFF0&icon_color=B7410E&border_color=ffffff30&border_radius=18" height="200"/>
+<img src="https://github-readme-stats.vercel.app/api?username=gruks&show_icons=true&theme=transparent&bg_color=ffffff10&title_color=B7410E&text_color=FFFFF0&icon_color=B7410E&border_color=ffffff30&border_radius=18" height="200"/>
 
 </div>
+
 <div align="center">
-  
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=gruks&layout=compact&theme=transparent&bg_color=ffffff10&title_color=B7410E&text_color=FFFFF0&border_color=ffffff30&border_radius=18" height="200"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gruks&layout=compact&theme=transparent&bg_color=ffffff10&title_color=B7410E&text_color=FFFFF0&border_color=ffffff30&border_radius=18" height="200"/>
 
 </div>
 
