@@ -20,7 +20,7 @@ I work across modern frontend stacks, Java/Spring backends, and DevOps tooling w
    <a href="https://github.com/gruks?tab=repositories&sort=stargazers">
       <img src="https://custom-icon-badges.demolab.com/github/stars/gruks?color=B7410E&style=for-the-badge&labelColor=1a0f0a&logo=star"/>
    </a>
-   <a href="https://linkedin.com/in/YOUR-LINK">
+   <a href="https://linkedin.com/in/ayush-kumar-52a9712b6/">
       <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-Connect-B7410E?style=for-the-badge&logo=linkedin&logoColor=white"/>
    </a>
    <a href="https://portfolio-puce-two-74.vercel.app/">
